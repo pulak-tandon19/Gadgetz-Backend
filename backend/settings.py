@@ -199,4 +199,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS= [
     'https://gadgetz.herokuapp.com',
     'http://gadgetz.herokuapp.com',
+    'https://gadgetz.netlify.app',
+    'http://gadgetz.netlify.app',
 ]
