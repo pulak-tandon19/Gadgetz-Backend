@@ -201,4 +201,5 @@ CORS_ALLOWED_ORIGINS= [
     'http://gadgetz.herokuapp.com',
     'https://gadgetz.netlify.app',
     'http://gadgetz.netlify.app',
+    'https://gadgetz.netlify.app/#/',
 ]
