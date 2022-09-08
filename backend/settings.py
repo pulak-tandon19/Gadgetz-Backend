@@ -195,7 +195,8 @@ STATIC_URL = "/static/"
 
 
 MEDIA_URL= '/images/'
-MEDIA_ROOT= 'static/images'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
@@ -212,9 +213,8 @@ CORS_ALLOWED_ORIGINS= [
 # ]  
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'gadgetzcloud',
+    'CLOUD_NAME': "gadgetzcloud",
     'API_KEY': '815844351672889',
     'API_SECRET': 'BpG69oCio5GfJ4D4bl-UQz97juY'
 }
 
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
