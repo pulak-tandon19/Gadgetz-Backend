@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import cloudinary_storage
+import cloudinary
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -43,6 +44,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'base.apps.BaseConfig',
     'cloudinary_storage',
+    'cloudinary',
 ]
 
 REST_FRAMEWORK = {
@@ -212,9 +214,13 @@ CORS_ALLOWED_ORIGINS= [
 #     '*'
 # ]  
 
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': "gadgetzcloud",
-    'API_KEY': '815844351672889',
-    'API_SECRET': 'BpG69oCio5GfJ4D4bl-UQz97juY'
-}
+
+
+cloudinary.config(cloud_name = 'gadgetzcloud',
+    api_key = '815844351672889',
+    api_secret= 'BpG69oCio5GfJ4D4bl-UQz97juY'
+)
+
+
+
 

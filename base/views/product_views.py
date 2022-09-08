@@ -9,6 +9,7 @@ from base.models import *
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework import status
 from django.core.paginator import Paginator, EmptyPage, Page, PageNotAnInteger
+import cloudinary.uploader
 
 class getProducts(APIView):
     def get(self, *args, **kwargs):
@@ -106,6 +107,8 @@ class uploadImage(APIView):
         product_id= data['product_id']
         product= Product.objects.get(_id= product.id)
         product.image= self.request.FILES.get('image')
+        photo= self.request.FILES.get('image')
+        cloudinary.uploader.upload(photo)
         product.save()
         return Response('Image uploaded!')
 
