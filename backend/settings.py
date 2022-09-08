@@ -196,7 +196,7 @@ STATIC_URL = "/static/"
 # STATICFILES_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
-MEDIA_URL= '/static/images/'
+MEDIA_URL= '/images/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
