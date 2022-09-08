@@ -191,7 +191,7 @@ import django_heroku
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = "/static/"
-# STATICFILES_STORAGE = 'whitenoise.storage.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
 MEDIA_URL= '/images/'
