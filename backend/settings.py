@@ -192,12 +192,12 @@ import os
 import django_heroku
 
 
-# STATIC_URL = "/static/"
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATIC_URL = "/static/"
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 
-# MEDIA_URL = '/images/'
+MEDIA_URL = '/images/'
 
 # STATICFILES_DIRS = [
 #     BASE_DIR / 'static',
@@ -206,19 +206,12 @@ import django_heroku
 
 
 # MEDIA_ROOT = BASE_DIR / 'static/images'
-# STATIC_ROOT = BASE_DIR / 'staticfiles'
-# DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-STATIC_URL = '/static/'
-MEDIA_URL = '/images/'
-
-STATICFILES_DIRS = [
-    BASE_DIR / 'static',
-    BASE_DIR / 'frontend/build/static'
-]
-
-
-MEDIA_ROOT = BASE_DIR / 'static/images'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+
+
+
 
 
 # Default primary key field type
@@ -237,11 +230,11 @@ CORS_ALLOWED_ORIGINS= [
 
 
 
-# CLOUDINARY_STORAGE = {
-#     'CLOUD_NAME': "gadgetzcloud",
-#     'API_KEY': '815844351672889',
-#     'API_SECRET': 'BpG69oCio5GfJ4D4bl-UQz97juY'
-# }
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': "gadgetzcloud",
+    'API_KEY': '815844351672889',
+    'API_SECRET': 'BpG69oCio5GfJ4D4bl-UQz97juY'
+}
 
 
 
