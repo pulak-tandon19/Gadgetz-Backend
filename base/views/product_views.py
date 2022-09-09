@@ -105,7 +105,7 @@ class uploadImage(APIView):
     def post(self, request):
         data= self.request.data
         product_id= data['product_id']
-        product= Product.objects.get(_id= product.id)
+        product= Product.objects.get(_id= product_id)
         product.image= self.request.FILES.get('image')
         # photo= self.request.FILES.get('image')
         # cloudinary.uploader.upload(photo)
