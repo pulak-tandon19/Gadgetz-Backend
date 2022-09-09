@@ -197,7 +197,8 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 MEDIA_URL= '/images/'
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+MEDIA_ROOT= '/static/images/'
+# DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
 # Default primary key field type
@@ -216,11 +217,11 @@ CORS_ALLOWED_ORIGINS= [
 
 
 
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': "gadgetzcloud",
-    'API_KEY': '815844351672889',
-    'API_SECRET': 'BpG69oCio5GfJ4D4bl-UQz97juY'
-}
+# CLOUDINARY_STORAGE = {
+#     'CLOUD_NAME': "gadgetzcloud",
+#     'API_KEY': '815844351672889',
+#     'API_SECRET': 'BpG69oCio5GfJ4D4bl-UQz97juY'
+# }
 
 
 
