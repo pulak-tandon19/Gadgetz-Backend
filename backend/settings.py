@@ -28,8 +28,8 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast = bool, default = False)
 
-ALLOWED_HOSTS = [config('ALLOWED_HOST')]
-# ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = [config('ALLOWED_HOST')]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -143,16 +143,6 @@ DATABASES = {
     }
 }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': config('NAME'),
-#         'USER': config('USER'),
-#         'PASSWORD': config('PASSWORD'),
-#         'HOST': config('HOST'),
-#         'PORT': config('PORT'), 
-#     }
-# }
 
 
 
@@ -206,9 +196,9 @@ MEDIA_URL = '/images/'
 # ]
 
 
-# MEDIA_ROOT = BASE_DIR / 'static/images'
+MEDIA_ROOT = BASE_DIR / 'static/images'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+# DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
 
